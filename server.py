@@ -32,7 +32,7 @@ def sendmessage(client):
             if message.startswith('@'):
                 reciever, content = message[1:].split(" ", 1)
                 if reciever in clients:
-                    clients[reciever].send(f'para {reciever}: {content}'.encode())
+                    clients[reciever].send(f'de {name} para {reciever}: {content}'.encode())
                 else:
                     client.send('Cliente não encontrado'.encode())
             else:

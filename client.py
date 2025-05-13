@@ -25,7 +25,7 @@ def main ():
     thread.start()
 
     while True: 
-        message = input('Escreva sua mensagem')
+        message = input('Escreva sua mensagem:\n')
 
         if message == '/exit':
             client.close()
